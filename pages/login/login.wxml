@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="info">
+  <view class="infoAvatar">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" lang="zh_CN"></open-data>
+  <button size="mini" open-type="getUserInfo" class="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+</view>

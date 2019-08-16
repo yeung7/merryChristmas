@@ -1,0 +1,29 @@
+<!--pages/list/list.wxml-->
+<view class="top">
+  <button bindtap="bindtappost" class="topost" size="mini" type="primary">分享</button>
+
+</view>
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" >
+  <view class="picker" style="margin-left:200rpx">
+   {{region[0]}}，{{region[1]}}，{{region[2]}}
+  </view>
+</picker>
+
+<!-- <scroll-view class="postList" scroll-y="true" enable-back-to-top='true'> -->
+<block width wx:for="{{ postList }}">
+  <view class="alist">
+    <view class="alisttop">
+      <image src="{{item.avatarurl}}"></image>
+      <text>{{item.nickname}}</text>
+    </view>
+    <view class="postimg">
+      <image src="{{item.picsrc}}" style="width:600rpx;height:450rpx;background-color:#f5f8f9" mode="aspectFit"></image>
+    </view>
+    <view class="context">{{item.context}}</view>
+    <view class="address">
+      <image src="../../image/timg.png" style="width:30rpx; height:30rpx"></image>
+      {{item.address}}
+    </view>
+  </view>
+</block>
+<!-- </scroll-view> -->

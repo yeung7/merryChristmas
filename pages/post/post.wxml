@@ -1,0 +1,20 @@
+<!--pages/post/post.wxml-->
+
+<view class="section">
+  <form bindsubmit="addPost">
+    <view class="top">
+      <button class="send" size="mini" type="primary" form-type="submit">发送</button>
+    </view>
+    <view class="picContainer">
+      <image class="pic" src="{{pic}}" style="background-color:#f5f8f9;width:700rpx" mode="aspectFit"></image>
+      <!-- <image class="pic" src="../../image/1.png"></image> -->
+    </view>
+    <view class="contentContainer">
+      <textarea class="content" bindblur="bindTextAreaBlur" value='{{context}}' focus='{{focus}}' auto-height placeholder="say something..." />
+    </view>
+    <view class="address">
+      <image src="../../image/timg.png" style="width:30rpx; height:30rpx"></image>
+      {{address}}
+    </view>
+  </form>
+</view>

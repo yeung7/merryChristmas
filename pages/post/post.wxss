@@ -1,0 +1,15 @@
+/* pages/post/post.wxss */
+.picContainer image{
+  margin: 20rpx;
+}
+.contentContainer{
+  margin: 20rpx;
+}
+.address{
+ margin-left:20rpx
+}
+.top{
+  margin-left: 20rpx;
+}
+
+

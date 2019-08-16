@@ -1,0 +1,55 @@
+/* pages/list/list.wxss */
+
+page {
+  height: 100%;
+}
+
+
+.postList {
+  height: 90%;
+}
+
+.alist {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-top: 1px solid #efefef;
+}
+
+.alisttop {
+  display: flex;
+  margin: 10rpx;
+}
+
+.alisttop image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.alisttop text {
+  color: #2ba2da;
+  font-size: 18px;
+  margin: 20rpx
+}
+
+.postimg, .context, .address {
+  margin-left: 100rpx;
+  margin-top: 15rpx;
+}
+
+
+.address {
+  color: #aaa;
+}
+
+.context {
+  font-size: 18px;
+}
+
+.top{
+  position: fixed;
+  /* margin-bottom: 60rpx; */
+}
+.topost {
+  margin-left: 20rpx;
+}
